@@ -121,9 +121,9 @@
 }
 
 .tag-live {
-  background: rgba(0, 255, 136, 0.15);
-  border-color: rgba(0, 255, 136, 0.3);
-  color: #00ff88;
+  background: rgba(255, 0, 234, 0.15);
+  border-color: rgba(234, 0, 255, 0.3);
+  color: #a200ff;
 }
 
 /* Button */
