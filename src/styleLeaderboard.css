@@ -1,0 +1,111 @@
+
+
+#leaderboard table {
+    z-index: 1;
+    font-family: Roboto;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#leaderboard p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#leaderboard table caption {
+    text-align: left;
+    width: 80%;
+    margin-bottom: 20px;
+  
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#leaderboard table th {
+    padding: 10px 0px 10px 10px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+#leaderboard table tbody tr {
+    line-height: 1.2;
+    height: 60px;
+    border-radius: 10px;
+}
+
+#leaderboard table tbody td {
+    position: relative;
+    z-index: 1;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #eee;
+    overflow: hidden;
+}
+
+#leaderboard thead {
+    position: relative;
+    color: white;
+
+}
+
+
+#leaderboard table tbody td:nth-child(1) {
+    font-weight: 500;
+}
+
+#leaderboard > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(1){
+    color: gold;
+}
+#leaderboard > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(2) > td:nth-child(1){
+    color: silver;
+}
+#leaderboard > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(3) > td:nth-child(1){
+    color: rgba(190, 133, 26, 0.849);
+}
+
+#leaderboard table tbody td:nth-child(2) {
+    font-weight: 500;
+}
+
+.table-leaderboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 110px 180px 0 180px;
+
+}
+
+.pagination {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+    justify-content: center;
+    color: white;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.page-info {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
