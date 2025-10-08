@@ -45,6 +45,7 @@
   font-size: 1rem;
   transition: border-color 0.2s, box-shadow 0.2s;
   background-color: #1d1d1d88;
+  color: purple;
 }
 
 .member-input::placeholder {
