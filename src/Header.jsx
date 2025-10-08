@@ -13,7 +13,7 @@ function Header() {
 
     return (
         <BrowserRouter>
-            <header>
+            <header className='header'>
                 {/* Logo Section */}
                 <div className="nav-logo">
                     <Link to="/" className="logo">
