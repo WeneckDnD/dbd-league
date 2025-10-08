@@ -3,20 +3,8 @@ import './styleTeams.css'
 
 function Teams() {
     return (
-        <>
-        <div className="xxx">
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-        </div>
-        </>
+        <Card></Card>
+
 
     )
 }
