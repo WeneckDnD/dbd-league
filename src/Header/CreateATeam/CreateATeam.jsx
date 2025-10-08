@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './styleTeamCreation.css'
 
 export default function CreateTeam() {
     const [teamData, setTeamData] = useState({

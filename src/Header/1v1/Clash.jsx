@@ -1,3 +1,5 @@
+import './styleClash.css'
+
 function Clash() {
     return (
         <section id="clash">

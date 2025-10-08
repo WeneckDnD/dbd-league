@@ -1,5 +1,6 @@
 // Leaderboard.jsx
 import { useEffect, useState } from 'react';
+import './styleLeaderboard.css'
 
 async function fetchData(url) {
     try {

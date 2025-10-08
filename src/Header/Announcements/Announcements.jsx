@@ -1,4 +1,5 @@
-import imageAHL from './img/AHL_2025_final_5k.png'
+import imageAHL from '../../img/AHL_2025_final_5k.png'
+import './styleAnnoun.css'
 
 function Announcements() {
     return (

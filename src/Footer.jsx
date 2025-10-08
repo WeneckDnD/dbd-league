@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Support from './Support';
 import Faq from './Faq';
-import About from './About';
+import About from './Header/About/About';
 
 function Footer() {
     return (
@@ -46,7 +46,7 @@ function Footer() {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>&copy; 2024 DBD Competitive League. All rights reserved.</p>
+                    <p>&copy; 2025 DBD Competitive League. All rights reserved.</p>
                 </div>
             </footer>
 

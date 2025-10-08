@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import News from './News';
-import PlayersTable from './PlayersTable';
-import Announcements from './Announcements';
-import Clash from './Clash';
-import CreateTeam from './CreateATeam';
-import LeaderboardComponent from './Leaderboard';
-import About from './About';
-import dbdl_logo from './img/dbdllogo.png'
-import Teams from './Teams';
+import PlayersTable from './BOTB/PlayersTable';
+import Announcements from './Announcements/Announcements';
+import Clash from './1v1/Clash';
+import CreateTeam from './CreateATeam/CreateATeam';
+import LeaderboardComponent from './Leaderboard/Leaderboard';
+import About from './About/About';
+import dbdl_logo from '../img/dbdllogo.png'
+import Teams from './Teams/Teams';
+import './styleHeader.css';
 
 function Header() {
 
@@ -61,13 +61,12 @@ function Header() {
 
 
             <Routes>
-                <Route path='/news' element={<News />} />
-                <Route path='/BoB' element={<PlayersTable />} />
+                <Route path='/' element={<About />} />
                 <Route path='/announcements' element={<Announcements />} />
+                <Route path='/BoB' element={<PlayersTable />} />
                 <Route path='/1v1' element={<Clash />} />
                 <Route path='/teamCreation' element={<CreateTeam />} />
                 <Route path='/leaderboard' element={<LeaderboardComponent />} />
-                <Route path='/' element={<About />} />
                 <Route path='/teams' element={<Teams />} />
                 
             </Routes>

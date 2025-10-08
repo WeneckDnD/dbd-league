@@ -1,4 +1,4 @@
-
+import  './styleAbout.css'
 
 function About() {
 

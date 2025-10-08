@@ -4,8 +4,6 @@ import './styleTeams.css'
 function Teams() {
     return (
         <Card></Card>
-
-
     )
 }
 
