@@ -1,10 +1,10 @@
-
+import './styleFaq.css';
 
 function Faq() {
     return(
     <section id="faq">
-        <h2>Frequently Asked Questions</h2>
         <div className="faq-text">
+        <h2>Frequently Asked Questions</h2>
 
             <h3>FAQ #1 - HOW TO 1V1</h3>
             <p>
@@ -40,8 +40,8 @@ function Faq() {
             <h3>FAQ #5 - 1v1 TIMERS</h3>
             <p>DBDLeague recommends these timers for your 1v1s:</p>
             <ul>
-                <li><a href="https://truueh.itch.io/dbd-1v1-timer" target="_blank">Truueh 1v1 Timer</a></li>
-                <li><a href="https://livesplit.org/" target="_blank">LiveSplit</a></li>
+                {/* <li><a href="https://truueh.itch.io/dbd-1v1-timer" target="_blank">Truueh 1v1 Timer</a></li>
+                <li><a href="https://livesplit.org/" target="_blank">LiveSplit</a></li> */}
             </ul>
             <p>
                 Big thanks to <strong>@Truueh</strong> for creating and sharing this timer with us.

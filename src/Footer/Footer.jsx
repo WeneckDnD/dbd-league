@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Support from './Support';
-import Faq from './Faq';
-import About from './Header/About/About';
+import Support from '../Support';
+import Faq from './FAQ/Faq';
+import About from '../Header/About/About';
+import './styleFooter.css';
+
 
 function Footer() {
     return (
-        <BrowserRouter>
             <footer className="site-footer">
                 <div className="footer-content">
                     <div className="footer-section">
@@ -29,9 +30,9 @@ function Footer() {
                     <div className="footer-section">
                         <h3>Community</h3>
                         <ul>
-                            <li><a href="#discord">Discord</a></li>
-                            <li><a href="#twitter">Twitter</a></li>
-                            <li><a href="#twitch">Twitch</a></li>
+                            <li><a href='https://discord.gg/dbdleague' target="_blank">Discord</a></li> {/*link*/}
+                            <li><a href='https://x.com/DBDLeague' target="_blank">Twitter</a></li>
+                            <li><a href='https://www.twitch.tv/DBDLeague' target="_blank">Twitch</a></li>
                         </ul>
                     </div>
 
@@ -50,12 +51,7 @@ function Footer() {
                 </div>
             </footer>
 
-            <Routes>
-                <Route path='/FAQ' element={<Faq />} />
-                <Route path='/support' element={<Support />} /> 
-                <Route path='/about' element={<About />} />
-            </Routes>
-        </BrowserRouter>
+
     )
 }
 

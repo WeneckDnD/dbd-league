@@ -135,12 +135,10 @@
 
 .footer-section a::before {
     content: '';
-    position: absolute;
     bottom: 0;
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--glow-purple);
     transition: width 0.3s ease;
 }
 
@@ -160,7 +158,7 @@
     text-shadow: 0 0 10px #7289da;
 }
 
-.footer-section a[href*="twitter"]:hover {
+.footer-section a[href*="x"]:hover {
     color: #1da1f2;
     text-shadow: 0 0 10px #1da1f2;
 }
@@ -172,17 +170,20 @@
 
 /* Add icons to social links */
 .footer-section a[href*="discord"]::before {
-    content: '🎮 ';
+    font-family: FontAwesome;
+    content: '\f392';
     margin-right: 8px;
 }
 
-.footer-section a[href*="twitter"]::before {
-    content: '🐦 ';
+.footer-section a[href*="x"]::before {
+    font-family: FontAwesome;
+    content: '\e61b ';
     margin-right: 8px;
 }
 
 .footer-section a[href*="twitch"]::before {
-    content: '📺 ';
+    font-family: FontAwesome;
+    content: '\f1e8';
     margin-right: 8px;
 }
 

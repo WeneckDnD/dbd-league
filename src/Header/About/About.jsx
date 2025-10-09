@@ -1,4 +1,4 @@
-import  './styleAbout.css'
+import './styleAbout.css'
 
 function About() {
 
@@ -29,44 +29,56 @@ function About() {
                     Events are funded via community support, donations, or sponsors.
                 </p>
             </div>
-            <div className="about-text">
+            <div className="team-table-container about-text">
                 <h2>Our Team</h2>
-                <p><strong>League Commissioners</strong></p>
-                <p>Dir3Wolf - Event Manager</p>
-                <p>Savanna - Event and Community Manager</p>
-                <p>Kasi - Head Staff</p>
-                <p>De_rolock - Finance Admin</p>
 
-                <p><strong>Staff</strong></p>
-                <p>Banshee</p>
-                <p>iko</p>
-                <p>Laser</p>
-                <p>Ratz</p>
-                <p>Veloria</p>
-                <p>V1</p>
+                <table className="team-table">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Member</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {/* League Commissioners */}
+                        <tr><td rowSpan="4">League Commissioners</td><td>Dir3Wolf</td><td>Event Manager</td></tr>
+                        <tr><td>Savanna</td><td>Event and Community Manager</td></tr>
+                        <tr><td>Kasi</td><td>Head Staff</td></tr>
+                        <tr><td>De_rolock</td><td>Finance Admin</td></tr>
 
-                <p><strong>Match Officials</strong></p>
-                <p>Andyfreel</p>
-                <p>Frozen</p>
-                <p>Scorched</p>
-                <p>TheSassyPancake</p>
-                <p>Yae</p>
+                        {/* Staff */}
+                        <tr><td rowSpan="6">Staff</td><td>Banshee</td><td>-</td></tr>
+                        <tr><td>iko</td><td>-</td></tr>
+                        <tr><td>Laser</td><td>-</td></tr>
+                        <tr><td>Ratz</td><td>-</td></tr>
+                        <tr><td>Veloria</td><td>-</td></tr>
+                        <tr><td>V1</td><td>-</td></tr>
 
-                <p><strong>Ladder Moderators</strong></p>
-                <p>Luphii</p>
-                <p>Parallax (add. twitch moderator)</p>
-                <p>Pimp (add. twitch moderator)</p>
+                        {/* Match Officials */}
+                        <tr><td rowSpan="5">Match Officials</td><td>Andyfreel</td><td>-</td></tr>
+                        <tr><td>Frozen</td><td>-</td></tr>
+                        <tr><td>Scorched</td><td>-</td></tr>
+                        <tr><td>TheSassyPancake</td><td>-</td></tr>
+                        <tr><td>Yae</td><td>-</td></tr>
 
-                <p><strong>Twitch Moderators</strong></p>
-                <p>Altaresh</p>
-                <p>Banshee</p>
-                <p>DreamerSteamer</p>
-                <p>Xeno</p>
+                        {/* Ladder Moderators */}
+                        <tr><td rowSpan="3">Ladder Moderators</td><td>Luphii</td><td>-</td></tr>
+                        <tr><td>Parallax</td><td>Add. Twitch Moderator</td></tr>
+                        <tr><td>Pimp</td><td>Add. Twitch Moderator</td></tr>
 
-                <p><strong>Artists</strong></p>
-                <p>Arla6</p>
-                <p>Pikz</p>
-                <p>Torsolman</p>
+                        {/* Twitch Moderators */}
+                        <tr><td rowSpan="4">Twitch Moderators</td><td>Altaresh</td><td>-</td></tr>
+                        <tr><td>Banshee</td><td>-</td></tr>
+                        <tr><td>DreamerSteamer</td><td>-</td></tr>
+                        <tr><td>Xeno</td><td>-</td></tr>
+
+                        {/* Artists */}
+                        <tr><td rowSpan="3">Artists</td><td>Arla6</td><td>-</td></tr>
+                        <tr><td>Pikz</td><td>-</td></tr>
+                        <tr><td>Torsolman</td><td>-</td></tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     )
