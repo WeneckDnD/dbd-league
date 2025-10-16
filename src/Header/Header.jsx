@@ -31,7 +31,7 @@ function Header() {
                     <li><Link to="/announcements">ANNOUNCEMENTS</Link></li>
 
                     {/* Live Section - Special styling for live content */}
-                    {/* <li><Link to="/live" className="live-link">LIVE</Link></li> */}
+                    <li><Link to="/live" className="live-link">LIVE</Link></li>
 
                     {/* Competition Links */}
                     {/* <li><Link to="/BoB">BoTB</Link></li> */}

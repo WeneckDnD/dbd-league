@@ -81,10 +81,10 @@ function LeaderboardComponent() {
     const isFirstPage = currentPage === 1;
 
     return (
-        <section id='leaderboard' className={`table-leaderboard ${isFirstPage?'leaderboard-first-rank leaderboard-second-rank leaderboard-third-rank':''}`} >
+        <section id='leaderboard' className={`table-leaderboard ${isFirstPage?'leaderboard-first-rank leaderboard-second-rank leaderboard-third-rank':''} `} >
             <div>
-                <table>
-                    <thead>
+                <table className='table-leaderboard-glow'>
+                    <thead className='head-leaderboard-glow'>
                         <tr>
                             <th>Rank</th>
                             <th>Player</th>
@@ -95,9 +95,9 @@ function LeaderboardComponent() {
                             <th>Streak</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody >
                         {currentPlayers.map((player) => (
-                            <tr key={player.id}>
+                            <tr key={player.id} className='table-tr-hover'>
                                 <td>{player.data.current_rank}</td>
                                 <td>{player.name}</td>
                                 <td>{Math.round(player.data.mmr)}</td>
