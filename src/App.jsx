@@ -15,6 +15,7 @@ import About from './Header/About/About';
 import Teams from './Header/Teams/Teams';
 import Support from './Support';
 import Faq from './Footer/FAQ/Faq';
+import EarningsTable from './Header/Teams-board/EarningTable.jsx';
 
 function App() {
 
@@ -51,6 +52,8 @@ function App() {
           <Route path='/FAQ' element={<Faq />} />
           <Route path='/support' element={<Support />} />
           <Route path='/about' element={<About />} />
+          <Route path='/seasons' element={<EarningsTable />} />
+
         </Routes>
 
         <Footer></Footer>

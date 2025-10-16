@@ -4,7 +4,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #000000;
+  background-color: #00000095;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -121,8 +121,8 @@
 .add-member-btn {
   align-self: flex-start;
   padding: 0.75rem 1.5rem;
-  background-color: #07607a;
-  color: rgba(31, 2, 192, 0.623);
+  background-color: #3f0e5c;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -132,7 +132,7 @@
 
 
 .add-member-btn:hover {
-  background-color: #07607a;
+  background-color: #3f0e5c;
 }
 
 /* Gaming Tags Section */
@@ -149,13 +149,12 @@
   justify-content: center;
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 1px solid #000000;
 }
 
 .submit-btn {
   padding: 0.875rem 2rem;
-  background-color: #07607a;
-  color: rgb(0, 18, 44);
+  background-color: #3f0e5c;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 8px;
   font-size: 1rem;
@@ -165,7 +164,7 @@
 }
 
 .submit-btn:hover {
-  background-color: #27dfff57;
+  background-color: #3f0e5c;
   transform: translateY(-1px);
 }
 
@@ -175,6 +174,8 @@
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 8px;
+
+
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;

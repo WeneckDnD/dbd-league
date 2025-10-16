@@ -1,4 +1,13 @@
 
+.leaderboard-first-rank > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(1){
+    color: gold !important;
+}
+.leaderboard-second-rank > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(2) > td:nth-child(1){
+    color: silver !important;
+}
+.leaderboard-third-rank> div:nth-child(1) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(3) > td:nth-child(1){
+    color: rgba(190, 133, 26, 0.849) !important;
+}
 
 #leaderboard table {
     z-index: 1;
@@ -58,15 +67,7 @@
     font-weight: 500;
 }
 
-#leaderboard > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(1){
-    color: gold;
-}
-#leaderboard > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(2) > td:nth-child(1){
-    color: silver;
-}
-#leaderboard > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(3) > td:nth-child(1){
-    color: rgba(190, 133, 26, 0.849);
-}
+
 
 #leaderboard table tbody td:nth-child(2) {
     font-weight: 500;

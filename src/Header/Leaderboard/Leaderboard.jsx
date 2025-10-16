@@ -1,6 +1,7 @@
 // Leaderboard.jsx
 import { useEffect, useState } from 'react';
 import './styleLeaderboard.css'
+import { bool } from 'three/tsl';
 
 async function fetchData(url) {
     try {
@@ -77,8 +78,10 @@ function LeaderboardComponent() {
         }
     };
 
+    const isFirstPage = currentPage === 1;
+
     return (
-        <section id='leaderboard' className='table-leaderboard'>
+        <section id='leaderboard' className={`table-leaderboard ${isFirstPage?'leaderboard-first-rank leaderboard-second-rank leaderboard-third-rank':''}`} >
             <div>
                 <table>
                     <thead>

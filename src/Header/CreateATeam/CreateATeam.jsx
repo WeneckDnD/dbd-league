@@ -120,41 +120,6 @@ export default function CreateTeam() {
                         </div>
                     </div>
 
-                    <div className='gaming-tags'>
-                        <div className='form-group'>
-                            <label className='form-label' htmlFor="steamTag">Steam Tag:</label>
-                            <input
-                                className='form-input'
-                                type="text"
-                                id="steamTag"
-                                value={teamData.steamTag}
-                                onChange={(e) => handleInputChange('steamTag', e.target.value)}
-                            />
-                        </div>
-
-                        <div className='form-group'>
-                            <label className='form-label' htmlFor="psTag">PlayStation Tag:</label>
-                            <input
-                                className='form-input'
-                                type="text"
-                                id="psTag"
-                                value={teamData.psTag}
-                                onChange={(e) => handleInputChange('psTag', e.target.value)}
-                            />
-                        </div>
-
-                        <div className='form-group'>
-                            <label className='form-label' htmlFor="xboxTag">Xbox Tag:</label>
-                            <input
-                                className='form-input'
-                                type="text"
-                                id="xboxTag"
-                                value={teamData.xboxTag}
-                                onChange={(e) => handleInputChange('xboxTag', e.target.value)}
-                            />
-                        </div>
-                    </div>
-
                     <div className='form-group'>
                         <label className='form-label' htmlFor="picture">Picture URL:</label>
                         <input

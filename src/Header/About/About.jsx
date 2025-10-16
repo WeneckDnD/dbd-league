@@ -17,7 +17,7 @@ function About() {
                 </p>
                 <p>
                     Although all platforms are welcome, some events are
-                    <strong>invite-only</strong>. You can earn your place by proving
+                    <strong> invite-only</strong>. You can earn your place by proving
                     yourself in our open tournaments.
                 </p>
                 <p>

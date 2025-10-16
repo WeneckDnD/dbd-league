@@ -184,6 +184,30 @@ header {
     animation: fadeInDown 0.3s ease;
 }
 
+.dropdown2 {
+    position: relative;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 100px;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--primary-purple);
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(156, 39, 176, 0.4);
+    z-index: 1000;
+    min-width: 200px;
+    padding: 10px 0;
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+    animation: fadeInDown 0.3s ease;
+}
+
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -244,4 +268,10 @@ header {
     100% {
         opacity: 0;
     }
+}
+
+.spanColor {
+    color: var(--accent-red);
+    font-weight: bold;
+    margin-left: 5px;
 }
