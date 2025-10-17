@@ -1,7 +1,6 @@
 // Leaderboard.jsx
-import { useEffect, useState } from 'react';
+import React from 'react'
 import './styleLeaderboard.css'
-import { bool } from 'three/tsl';
 
 async function fetchData(url) {
     try {
@@ -18,31 +17,21 @@ async function fetchData(url) {
 
 async function displayTable() {
     try {
-        const leaderboardData = await fetchData('https://host.neatqueue.com/api/leaderboard/1410340318250926182/1410340513873395804');
-        return leaderboardData;
+        return fetchData('https://host.neatqueue.com/api/leaderboard/1410340318250926182/1410340513873395804');
     } catch (err) {
         console.error("Failed to display table:", err);
         throw err;
     }
 }
 
+const loadData = await displayTable()
+    
 function LeaderboardComponent() {
-    const [data, setData] = useState(null);
-    const [currentPage, setCurrentPage] = useState(1);
+    const [currentPage, setCurrentPage] = React.useState(1);
     const playersPerPage = 10;
     const totalPages = 10;
 
-    useEffect(() => {
-        async function loadData() {
-            try {
-                const result = await displayTable();
-                setData(result);
-            } catch (error) {
-                console.error('Failed to load leaderboard:', error);
-            }
-        }
-        loadData();
-    }, []);
+    const data = React.useMemo(() => loadData, []);
 
     if (!data || !data.alltime) {
         return (
