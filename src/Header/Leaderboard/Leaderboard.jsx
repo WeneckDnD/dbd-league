@@ -1,7 +1,6 @@
 // Leaderboard.jsx
 import { useEffect, useState } from 'react';
 import './styleLeaderboard.css'
-import { bool } from 'three/tsl';
 
 async function fetchData(url) {
     try {
