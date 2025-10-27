@@ -7,6 +7,11 @@
   background-color: #00000095;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 25px rgba(187, 134, 252, 0.3);
+  color: #f0f0f0;
+  animation: 1.5s infinite alternate shadowEffect;
+
 }
 
 .create-team-title {

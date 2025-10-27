@@ -9,6 +9,7 @@
     font-family: 'Rajdhani', sans-serif;
     padding-top: 120px;
     text-align: center;
+
 }
 
 .about-text {
@@ -18,11 +19,13 @@
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 0 25px rgba(187, 134, 252, 0.3);
+    color: #f0f0f0;
+    animation: 1.5s infinite alternate shadowEffect;
     font-size: 20px;
     line-height: 1.9;
     text-align: left;
-    color: #f0f0f0;
-    animation: 1.5s infinite alternate shadowEffect;
+    backdrop-filter: blur(50px);
+
 }
 
 .about-text strong {
@@ -54,13 +57,9 @@
 }
 
 .team-table-container {
-    max-width: 900px;
+    max-width: 60%;
     margin: 4rem auto;
     padding: 2rem;
-    background-color: rgba(25, 25, 35, 0.85);
-    backdrop-filter: blur(8px);
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     color: #f3f3f3;
     font-family: 'Inter', sans-serif;
 }
@@ -69,23 +68,23 @@
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #bbaaff;
     letter-spacing: 1px;
 }
 
 .team-table {
     width: 100%;
     border-collapse: collapse;
-    background-color: rgba(40, 40, 55, 0.8);
-    border-radius: 12px;
-    overflow: hidden;
+    background-color: transparent;
+    margin: 0 auto;
+    table-layout: fixed;
 }
 
 .team-table th,
 .team-table td {
     padding: 0.9rem 1rem;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    width: 33.33%;
 }
 
 .team-table th {
@@ -116,6 +115,10 @@
     border-bottom: none;
 }
 
+.team-table > tbody:nth-child(1) > tr:nth-child(6) > td:nth-child(3) {
+    color: gold;
+}
+
 /* Responsive layout */
 @media (max-width: 700px) {
     .team-table-container {
@@ -132,3 +135,4 @@
         font-size: 1.5rem;
     }
 }
+

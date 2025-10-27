@@ -4,14 +4,13 @@ import {
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "./Card";
 import styles from "./TierCard.module.css";
+import Nurse from '../img/Nurse_AHL_2025_logo.png';
 
 const TierCard = ({
-  userName = "",
-  name = "Role",
-  imageUrl = "https://images.gamewatcherstatic.com/image/file/4/ab/102064/dead-by-daylight-wallpaper-1.jpg",
+  name = "Nurse",
+  imageUrl = Nurse,
   tier = "Tier S",
   rating = 5,
   onClick = () => alert("I'm coming for you..."),
@@ -19,7 +18,6 @@ const TierCard = ({
   return (
     <Card className={styles.tierCard} onClick={onClick}>
       <CardHeader className={styles.header}>
-        <CardTitle className={styles.title}>{userName}</CardTitle>
         <CardDescription className={styles.description}>
           {name}
         </CardDescription>

@@ -11,6 +11,8 @@
     font-family: 'Rajdhani', sans-serif;
     padding-top: 120px;
     text-align: center;
+    backdrop-filter: blur(50px);
+
 }
 
 .announ-text {

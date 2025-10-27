@@ -33,50 +33,16 @@ function About() {
                 <h2>Our Team</h2>
 
                 <table className="team-table">
-                    <thead>
-                        <tr>
-                            <th>Section</th>
-                            <th>Member</th>
-                            <th>Role</th>
-                        </tr>
-                    </thead>
                     <tbody>
-                        {/* League Commissioners */}
-                        <tr><td rowSpan="4">League Commissioners</td><td>Dir3Wolf</td><td>Event Manager</td></tr>
-                        <tr><td>Savanna</td><td>Event and Community Manager</td></tr>
-                        <tr><td>Kasi</td><td>Head Staff</td></tr>
-                        <tr><td>De_rolock</td><td>Finance Admin</td></tr>
-
-                        {/* Staff */}
-                        <tr><td rowSpan="6">Staff</td><td>Banshee</td><td>-</td></tr>
-                        <tr><td>iko</td><td>-</td></tr>
-                        <tr><td>Laser</td><td>-</td></tr>
-                        <tr><td>Ratz</td><td>-</td></tr>
-                        <tr><td>Veloria</td><td>-</td></tr>
-                        <tr><td>V1</td><td>-</td></tr>
-
-                        {/* Match Officials */}
-                        <tr><td rowSpan="5">Match Officials</td><td>Andyfreel</td><td>-</td></tr>
-                        <tr><td>Frozen</td><td>-</td></tr>
-                        <tr><td>Scorched</td><td>-</td></tr>
-                        <tr><td>TheSassyPancake</td><td>-</td></tr>
-                        <tr><td>Yae</td><td>-</td></tr>
-
-                        {/* Ladder Moderators */}
-                        <tr><td rowSpan="3">Ladder Moderators</td><td>Luphii</td><td>-</td></tr>
-                        <tr><td>Parallax</td><td>Add. Twitch Moderator</td></tr>
-                        <tr><td>Pimp</td><td>Add. Twitch Moderator</td></tr>
-
-                        {/* Twitch Moderators */}
-                        <tr><td rowSpan="4">Twitch Moderators</td><td>Altaresh</td><td>-</td></tr>
-                        <tr><td>Banshee</td><td>-</td></tr>
-                        <tr><td>DreamerSteamer</td><td>-</td></tr>
-                        <tr><td>Xeno</td><td>-</td></tr>
-
-                        {/* Artists */}
-                        <tr><td rowSpan="3">Artists</td><td>Arla6</td><td>-</td></tr>
-                        <tr><td>Pikz</td><td>-</td></tr>
-                        <tr><td>Torsolman</td><td>-</td></tr>
+                        <tr><td>Dir3Wolf</td><td>Savanna</td><td>Kasi</td></tr>
+                        <tr><td>De_rolock</td><td>Banshee</td><td>iko</td></tr>
+                        <tr><td>Laser</td><td>Ratz</td><td>Veloria</td></tr>
+                        <tr><td>V1</td><td>Andyfreel</td><td>Frozen</td></tr>
+                        <tr><td>Scorched</td><td>TheSassyPancake</td><td>Yae</td></tr>
+                        <tr><td>Luphii</td><td>Parallax</td><td>Pimp</td></tr>
+                        <tr><td>Altaresh</td><td>Banshee</td><td>DreamerSteamer</td></tr>
+                        <tr><td>Xeno</td><td>Arla6</td><td>Pikz</td></tr>
+                        <tr><td>Torsolman</td><td></td><td></td></tr>
                     </tbody>
                 </table>
             </div>
