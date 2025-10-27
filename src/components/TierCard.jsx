@@ -28,7 +28,7 @@ const TierCard = ({
       <CardFooter className={styles.footer}>
         <span className={styles.tierBadge}>{tier}</span>
         <div className={styles.rating}>
-          {[...Array(5)].map((_, i) => (
+          {[...Array(rating)].map((_, i) => (
             <span key={i} className={styles.star}>
               {i < rating ? "★" : "☆"}
             </span>
