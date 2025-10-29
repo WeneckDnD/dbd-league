@@ -6,6 +6,15 @@ import Spirit from '../img/Spirit_AHL_2025_logo_2.png';
 import Krasue from '../img/Krasue_AHL_2025_logo.png';
 import Tier3 from '../img/Tier_3_AHL_2025.png';
 import Singu from '../img/Singularity_AHL_2025_logo.png';
+import Animatronic from '../img/Tier_3_AHL_2025.png';
+import Demogorgon from '../img/Tier_3_AHL_2025.png';
+import Houndmaster from '../img/Tier_3_AHL_2025.png';
+import Huntress from '../img/Tier_3_AHL_2025.png';
+import Mastermind from '../img/Tier_3_AHL_2025.png';
+import Nightmare from '../img/Tier_3_AHL_2025.png';
+import Oni from '../img/Tier_3_AHL_2025.png';
+import Plague from '../img/Tier_3_AHL_2025.png';
+import Unknown from '../img/Tier_3_AHL_2025.png';
 
 
 const Stats = () => {
@@ -59,6 +68,69 @@ const Stats = () => {
             tier: "Tier 3",
             rating: 3,
             onClick: () => alert("The Ghoul Balancing")
+        },
+        {
+            name: "The Animatronic",
+            imageUrl: Animatronic,
+            tier: "Tier 3",
+            rating: 3,
+            onClick: () => alert("The Animatronic Balancing")
+        },
+        {
+            name: "The Demogorgon",
+            imageUrl: Demogorgon,
+            tier: "Tier 3",
+            rating: 3,
+            onClick: () => alert("The Demogorgon Balancing")
+        },
+        {
+            name: "The Houndmaster",
+            imageUrl: Houndmaster,
+            tier: "Tier 3",
+            rating: 3,
+            onClick: () => alert("The Houndmaster Balancing")
+        },
+        {
+            name: "The Huntress",
+            imageUrl: Huntress,
+            tier: "Tier 3",
+            rating: 3,
+            onClick: () => alert("The Huntress Balancing")
+        },
+        {
+            name: "The Mastermind",
+            imageUrl: Mastermind,
+            tier: "Tier 3",
+            rating: 3,
+            onClick: () => alert("The Mastermind Balancing")
+        },
+        {
+            name: "The Nightmare",
+            imageUrl: Nightmare,
+            tier: "Tier 3",
+            rating: 3,
+            onClick: () => alert("The Nightmare Balancing")
+        },
+        {
+            name: "The Oni",
+            imageUrl: Oni,
+            tier: "Tier 3",
+            rating: 3,
+            onClick: () => alert("The Oni Balancing")
+        },
+        {
+            name: "The Plague",
+            imageUrl: Plague,
+            tier: "Tier 3",
+            rating: 3,
+            onClick: () => alert("The Plague Balancing")
+        },
+        {
+            name: "The Unknown",
+            imageUrl: Unknown,
+            tier: "Tier 3",
+            rating: 3,
+            onClick: () => alert("The Unknown Balancing")
         }
     ];
 

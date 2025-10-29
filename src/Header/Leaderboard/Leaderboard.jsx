@@ -1,6 +1,7 @@
 // Leaderboard.jsx
 import { useEffect, useState } from 'react';
 import './styleLeaderboard.css'
+import SpinnerBadge from '../../components/spinner';
 
 async function fetchData(url) {
     try {
@@ -47,6 +48,7 @@ function LeaderboardComponent() {
         return (
             <section id='leaderboard' className='table-leaderboard'>
                 <div>
+                    <SpinnerBadge/>
                     <p>Loading...</p>
                 </div>
             </section>
