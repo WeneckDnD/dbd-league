@@ -31,8 +31,8 @@ function Card({ rank, name, wins, description, tag }) {
         <div className="tags">
           <span className="tag tag-live">{tag}</span>
           <span className="tag">🏆 {wins}x</span>
+          <button className="btn">About</button>
         </div>
-        <button className="btn">About</button>
       </div>
     </div>
   );

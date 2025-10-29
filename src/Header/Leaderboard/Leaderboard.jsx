@@ -1,7 +1,6 @@
 // Leaderboard.jsx
 import { useEffect, useState } from 'react';
 import './styleLeaderboard.css'
-import SpinnerBadge from '../../components/spinner';
 
 async function fetchData(url) {
     try {
@@ -18,7 +17,7 @@ async function fetchData(url) {
 
 async function displayTable() {
     try {
-        const leaderboardData = await fetchData('https://host.neatqueue.com/api/leaderboard/1410340318250926182/1410340513873395804');
+        const leaderboardData = await fetchData('https://host.neatqueue.com/api/v2/leaderboard/1410340318250926182/141515629738013502');
         return leaderboardData;
     } catch (err) {
         console.error("Failed to display table:", err);
@@ -48,7 +47,6 @@ function LeaderboardComponent() {
         return (
             <section id='leaderboard' className='table-leaderboard'>
                 <div>
-                    <SpinnerBadge/>
                     <p>Loading...</p>
                 </div>
             </section>

@@ -18,6 +18,8 @@ import Faq from './Footer/FAQ/Faq';
 import EarningsTable from './Header/Teams-board/EarningTable.jsx';
 import ProjectCard from './Header/Live/ProjectCard.jsx';
 import Stats from './pages/Stats';
+import Information from './Header/Seasons/CurrentSeason/Information/Information.jsx'
+import Qualification from './Header/Seasons/CurrentSeason/Qualification/Qualification.jsx';
 
 function App() {
 
@@ -54,9 +56,15 @@ function App() {
           <Route path='/FAQ' element={<Faq />} />
           <Route path='/support' element={<Support />} />
           <Route path='/about' element={<About />} />
-          <Route path='/seasons' element={<EarningsTable />} />
+          {/* <Route path='/seasons' element={<Stats />} /> */}
           <Route path='/stats' element={<Stats />} />
           <Route path='/live' element={<ProjectCard />} />
+          <Route path='/seasons/current/info' element={<Information />} />
+          <Route path='/seasons/current/qualification' element={<Qualification />} />
+          <Route path='/seasons/current' element={<Stats />} />
+
+
+
 
         </Routes>
 

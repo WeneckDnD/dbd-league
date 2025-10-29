@@ -46,8 +46,8 @@ function Header() {
                             <div className='dropdown2'>
                                 <Link to="/seasons/current">Current Season (AHL)<span className='spanColor'>NEW!</span></Link>
                                 <div className='dropdown-content2'>
-                                    <Link to="/seasons/season-10">Information</Link>
-                                    <Link to="/seasons/season-9">Qualification info</Link>
+                                    <Link to="/seasons/current/info">Information</Link>
+                                    <Link to="/seasons/current/qualification">Qualification info</Link>
                                     <Link to="/seasons/season-8">Ruleset</Link>
                                     <Link to="/seasons/archives">survivor rule update</Link>
                                     <Link to="/seasons/balancing">gold standarts killers</Link>

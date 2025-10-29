@@ -16,7 +16,6 @@
 #clash {
     font-family: 'Rajdhani', sans-serif;
     padding-top: 120px;
-    backdrop-filter: blur(50px);
 
 }
 
@@ -31,6 +30,8 @@
     line-height: 1.9;
     color: #f0f0f0;
     animation: 1.5s infinite alternate shadowEffect;
+    backdrop-filter: blur(50px);
+
 }
 
 .clash-text p {
