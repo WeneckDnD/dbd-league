@@ -17,7 +17,7 @@ async function fetchData(url) {
 
 async function displayTable() {
     try {
-        const leaderboardData = await fetchData('https://host.neatqueue.com/api/v2/leaderboard/1410340318250926182/141515629738013502');
+        const leaderboardData = await fetchData('https://host.neatqueue.com/api/v2/leaderboard/1410340318250926182/1415156297380135023?page=1&month=alltime&month=2025-11');
         return leaderboardData;
     } catch (err) {
         console.error("Failed to display table:", err);
@@ -43,7 +43,9 @@ function LeaderboardComponent() {
         loadData();
     }, []);
 
-    if (!data || !data.alltime) {
+    console.log({data});
+
+    if (!data || !data.months) {
         return (
             <section id='leaderboard' className='table-leaderboard'>
                 <div>
@@ -54,10 +56,11 @@ function LeaderboardComponent() {
     }
 
     // Calculate pagination
-    const totalPlayers = data.alltime.length;
+    const totalPlayers = data.months[0].data.length;
+    // const totalPlayers = data.alltime.length;
     const startIndex = (currentPage - 1) * playersPerPage;
     const endIndex = startIndex + playersPerPage;
-    const currentPlayers = data.alltime.slice(startIndex, endIndex);
+    const currentPlayers = data.months[0].data.slice(startIndex, endIndex);
     console.log(totalPages, totalPlayers, currentPlayers);
 
     // Pagination handlers
@@ -97,13 +100,13 @@ function LeaderboardComponent() {
                     <tbody >
                         {currentPlayers.map((player) => (
                             <tr key={player.id} className='table-tr-hover'>
-                                <td>{player.data.current_rank}</td>
+                                <td>{player.stats.current_rank}</td>
                                 <td>{player.name}</td>
-                                <td>{Math.round(player.data.mmr)}</td>
-                                <td>{player.data.wins}</td>
-                                <td>{player.data.losses}</td>
-                                <td>{(player.data.winrate * 100).toFixed(1)}%</td>
-                                <td>{player.data.streak}</td>
+                                <td>{Math.round(player.stats.mmr)}</td>
+                                <td>{player.stats.wins}</td>
+                                <td>{player.stats.losses}</td>
+                                <td>{(player.stats.winrate * 100).toFixed(1)}%</td>
+                                <td>{player.stats.streak}</td>
                             </tr>
                         ))}
                     </tbody>
